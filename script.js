@@ -47,7 +47,6 @@ document.getElementById("descargarBtn").addEventListener("click", function() {
     const link = document.createElement("a");
     link.href = "hoja_de_vida_dany.pdf"; // Ruta al archivo PDF
     link.download = "HV DANY-VEGA.pdf"; // Nombre del archivo al descargar
-    link.click();
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
