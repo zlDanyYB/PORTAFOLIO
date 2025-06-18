@@ -49,7 +49,6 @@ document.getElementById("descargarBtn").addEventListener("click", function() {
     link.download = "HV DANY-VEGA.pdf"; // Nombre del archivo al descargar
     document.body.appendChild(link);
     link.click();
-    document.body.removeChild(link);
 });
 
 // Acción para abrir WhatsApp con mensaje
