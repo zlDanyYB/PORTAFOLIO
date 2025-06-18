@@ -41,3 +41,22 @@ function efectoHabilidades() {
 window.onscroll = function() {
     efectoHabilidades();
 }
+
+// Acción para descargar el archivo PDF
+document.getElementById("descargarBtn").addEventListener("click", function() {
+    const link = document.createElement("a");
+    link.href = "hoja_de_vida_dany.pdf"; // Ruta al archivo PDF
+    link.download = "HV DANY-VEGA.pdf"; // Nombre del archivo al descargar
+    link.click();
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+});
+
+// Acción para abrir WhatsApp con mensaje
+document.getElementById("whatsappBtn").addEventListener("click", function() {
+    const numero = "593987575594";
+    const mensaje = encodeURIComponent("👋 ¡Hola! Muchas gracias por revisar mi portafolio 🙌 Aprecio tu tiempo 💻📱.Puedes escribirme directamente por aquí.");
+    const url = `https://wa.me/${numero}?text=${mensaje}`;
+    window.location.href = url;
+});
